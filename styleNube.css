@@ -55,7 +55,7 @@
       transform: translateX(0);
     }
     50% {
-      transform: translateX(1000px) translateY(-10px);
+      transform: translateX(900px) translateY(-10px);
     }
     100% {
       transform: translateX(0);

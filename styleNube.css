@@ -1,0 +1,45 @@
+.cloud {
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+  
+  .cloud-part {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    opacity: 0.8;
+  }
+  
+  .cloud-part:nth-child(1) {
+    top: 20px;
+    left: 30px;
+    animation: move-cloud 4s ease-in-out infinite;
+  }
+  
+  .cloud-part:nth-child(2) {
+    top: 0px;
+    left: 80px;
+    animation: move-cloud 4s ease-in-out 1s infinite;
+  }
+  
+  .cloud-part:nth-child(3) {
+    top: 10px;
+    left: 130px;
+    animation: move-cloud 4s ease-in-out 2s infinite;
+  }
+  
+  @keyframes move-cloud {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(20px) translateY(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
